@@ -108,6 +108,7 @@ startRecordPNGFrames.addEventListener('click', (e) => {
 const stopRecordPNGFrames = document.getElementById('stopPNG');
 stopRecordPNGFrames.addEventListener('click', (e) => {
 	e.preventDefault();
+	console.log('pngFramesCapture',pngFramesCapture);
 	CanvasCapture.stopRecord(pngFramesCapture);
 	pngFramesCapture = undefined;
 	stopRecordPNGFrames.style.display = 'none';
